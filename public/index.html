@@ -22,7 +22,7 @@
       </nav>
       <div class="container">
         <div class="header-hello">
-          <p class="hidden-xs">Hi&nbsp;there! We&nbsp;are the new kids on&nbsp;the block<br> and we&nbsp;build awesome websites and mobile apps.</p><a href="#" class="button">Work with&nbsp;us</a>
+          <p>Hi&nbsp;there! We&nbsp;are the new kids on&nbsp;the block<br> and we&nbsp;build awesome websites and mobile apps.</p><a href="#" class="button">Work with&nbsp;us</a>
         </div>
       </div>
     </header>
@@ -43,6 +43,7 @@
             <div class="title">Design</div>
             <div class="info">Sed ut&nbsp;perspiciatis unde omnis iste natus error sit voluptatem</div>
           </div>
+          <div class="clearfix visible-sm-block"></div>
           <div class="col-xs-12 col-sm-6 col-md-3 service">
             <div class="icon-wrapper"><img src="img/services_development.png" width="159" height="122" alt="Development" class="icon icon-development"></div>
             <div class="title">Development</div>
@@ -68,10 +69,10 @@
             <div class="position">CEO / Marketing Guru</div>
             <div class="info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore magna.</div>
             <ul class="contacts">
-              <li class="contact"><a href="#" class="link link-facebook"></a></li>
-              <li class="contact"><a href="#" class="link link-twitter"></a></li>
-              <li class="contact"><a href="#" class="link link-linkedin"></a></li>
-              <li class="contact"><a href="mailto:#" class="link link-mail"></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-facebook"></i></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-twitter"></i></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-linkedin"></i></a></li>
+              <li class="contact"><a href="mailto:#" class="link"><i class="fa fa-envelope"></i></a></li>
             </ul>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 team-member"><img src="img/team_2.jpg" width="200" height="200" class="photo">
@@ -79,20 +80,21 @@
             <div class="position">Creative Director</div>
             <div class="info">Duis aute irure dolor in&nbsp;in&nbsp;voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</div>
             <ul class="contacts">
-              <li class="contact"><a href="#" class="link link-twitter"></a></li>
-              <li class="contact"><a href="#" class="link link-linkedin"></a></li>
-              <li class="contact"><a href="mailto:#" class="link link-mail"></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-twitter"></i></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-linkedin"></i></a></li>
+              <li class="contact"><a href="mailto:#" class="link"><i class="fa fa-envelope"></i></a></li>
             </ul>
           </div>
+          <div class="clearfix visible-sm-block"></div>
           <div class="col-xs-12 col-sm-6 col-md-3 team-member"><img src="img/team_3.jpg" width="200" height="200" class="photo">
             <div class="name">Olivia Wilde</div>
             <div class="position">Lead Designer</div>
             <div class="info">Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</div>
             <ul class="contacts">
-              <li class="contact"><a href="#" class="link link-facebook"></a></li>
-              <li class="contact"><a href="#" class="link link-twitter"></a></li>
-              <li class="contact"><a href="#" class="link link-linkedin"></a></li>
-              <li class="contact"><a href="mailto:#" class="link link-mail"></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-facebook"></i></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-twitter"></i></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-linkedin"></i></a></li>
+              <li class="contact"><a href="mailto:#" class="link"><i class="fa fa-envelope"></i></a></li>
             </ul>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 team-member"><img src="img/team_4.jpg" width="200" height="200" class="photo">
@@ -100,9 +102,9 @@
             <div class="position">SEO / Developer</div>
             <div class="info">Sed ut&nbsp;perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</div>
             <ul class="contacts">
-              <li class="contact"><a href="#" class="link link-facebook"></a></li>
-              <li class="contact"><a href="#" class="link link-twitter"></a></li>
-              <li class="contact"><a href="mailto:#" class="link link-mail"></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-facebook"></i></a></li>
+              <li class="contact"><a href="#" class="link"><i class="fa fa-twitter"></i></a></li>
+              <li class="contact"><a href="mailto:#" class="link"><i class="fa fa-envelope"></i></a></li>
             </ul>
           </div>
         </div>
@@ -116,26 +118,31 @@
         </div>
         <div class="row skills">
           <div class="col-xs-12 col-sm-6 col-md-3 skill">
-            <div class="percents"><img src="img/skills_1.png" width="160" height="160" alt="Web Design Skill 90%">
-              <div class="value">90</div>
+            <div data-value="90" data-color="#3c989e" class="percents">
+              <canvas width="160" height="160" class="canvas"><img src="img/skills_1.png" width="160" height="160" alt="Web Design Skill 90%"></canvas>
+              <div class="value"></div>
             </div>
             <div class="name">Web Design</div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 skill">
-            <div class="percents"><img src="img/skills_2.png" width="160" height="160" alt="Web Design Skill 75%">
-              <div class="value">75</div>
+            <div data-value="75" data-color="#ed5276" class="percents">
+              <canvas width="160" height="160" class="canvas"><img src="img/skills_2.png" width="160" height="160" alt="Web Design Skill 75%"></canvas>
+              <div class="value"></div>
             </div>
             <div class="name">HTML / CSS</div>
           </div>
+          <div class="clearfix visible-sm-block"></div>
           <div class="col-xs-12 col-sm-6 col-md-3 skill">
-            <div class="percents"><img src="img/skills_3.png" width="160" height="160" alt="Web Design Skill 70%">
-              <div class="value">70</div>
+            <div data-value="70" data-color="#5db5a4" class="percents">
+              <canvas width="160" height="160" class="canvas"><img src="img/skills_3.png" width="160" height="160" alt="Web Design Skill 70%"></canvas>
+              <div class="value"></div>
             </div>
             <div class="name">Graphic Design</div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 skill">
-            <div class="percents"><img src="img/skills_4.png" width="160" height="160" alt="Web Design Skill 85%">
-              <div class="value">85</div>
+            <div data-value="85" data-color="#f57a82" class="percents">
+              <canvas width="160" height="160" class="canvas"><img src="img/skills_4.png" width="160" height="160" alt="Web Design Skill 85%"></canvas>
+              <div class="value"></div>
             </div>
             <div class="name">UI / UX</div>
           </div>
@@ -191,7 +198,7 @@
         <div class="row feedback-entries">
           <div class="col-xs-12 col-sm-12 col-md-6 entry">
             <div class="row">
-              <div class="col-xs-6 col-sm-4 col-md-3"><img src="img/feedback_1.jpg" width="96" height="96" alt="Chanel Iman" class="img-responsive photo"></div>
+              <div class="col-xs-6 col-sm-4 col-md-3 text-center"><img src="img/feedback_1.jpg" width="96" height="96" alt="Chanel Iman" class="img-responsive photo"></div>
               <div class="col-xs-6 col-sm-8 col-md-9">
                 <div class="text">
                   <p>Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu&nbsp;nisl scelerisque.</p>
@@ -203,7 +210,7 @@
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 entry">
             <div class="row">
-              <div class="col-xs-6 col-sm-4 col-md-3"><img src="img/feedback_2.jpg" width="96" height="96" alt="Brooklyn Jones" class="img-responsive photo"></div>
+              <div class="col-xs-6 col-sm-4 col-md-3 text-center"><img src="img/feedback_2.jpg" width="96" height="96" alt="Brooklyn Jones" class="img-responsive photo"></div>
               <div class="col-xs-6 col-sm-8 col-md-9">
                 <div class="text">
                   <p>Vivamus luctus urna sed urna ultricies ac&nbsp;tempor dui sagittis. In&nbsp;condimentum facilisis porta.</p>
@@ -213,9 +220,10 @@
               </div>
             </div>
           </div>
+          <div class="clearfix visible-md-block"></div>
           <div class="col-xs-12 col-sm-12 col-md-6 entry">
             <div class="row">
-              <div class="col-xs-6 col-sm-4 col-md-3"><img src="img/feedback_3.jpg" width="96" height="96" alt="Donald Roberts" class="img-responsive photo"></div>
+              <div class="col-xs-6 col-sm-4 col-md-3 text-center"><img src="img/feedback_3.jpg" width="96" height="96" alt="Donald Roberts" class="img-responsive photo"></div>
               <div class="col-xs-6 col-sm-8 col-md-9">
                 <div class="text">
                   <p>Vivamus luctus urna sed urna ultricies ac&nbsp;tempor dui sagittis. In&nbsp;condimentum facilisis porta.</p>
@@ -227,7 +235,7 @@
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 entry">
             <div class="row">
-              <div class="col-xs-6 col-sm-4 col-md-3"><img src="img/feedback_4.jpg" width="96" height="96" alt="Joe Ward" class="img-responsive photo"></div>
+              <div class="col-xs-6 col-sm-4 col-md-3 text-center"><img src="img/feedback_4.jpg" width="96" height="96" alt="Joe Ward" class="img-responsive photo"></div>
               <div class="col-xs-6 col-sm-8 col-md-9">
                 <div class="text">
                   <p>Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.</p>
@@ -246,20 +254,23 @@
         <div class="section-body">
           <p>1600 Pennsylvania Ave NW, Washington, DC&nbsp;20500, United States of&nbsp;America. Tel: (202) 456-1111</p>
         </div>
-        <form class="contact-form">
-          <!--.col-xs-offset-1.col-sm-offset-1.col-md-offset-1.col-xs-10.col-sm-10.col-md-10-->
-          <div class="row form-group">
+        <form id="contact-form" class="contact-form">
+          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6">
-              <label for="your-name" class="sr-only">Your Name</label>
-              <input id="your-name" type="text" name="yourName" placeholder="Your Name" class="form-control">
+              <div class="form-group">
+                <label for="your-name" class="sr-only">Your Name</label>
+                <input id="your-name" type="text" name="yourName" placeholder="Your Name" required class="form-control">
+              </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6">
-              <label for="your-email" class="sr-only">Your E-mail</label>
-              <input id="your-email" type="text" name="yourEmail" placeholder="Your E-mail" class="form-control">
+              <div class="form-group">
+                <label for="your-email" class="sr-only">Your E-mail</label>
+                <input id="your-email" type="email" name="yourEmail" placeholder="Your E-mail" required class="form-control">
+              </div>
             </div>
           </div>
           <div class="form-group">
-            <textarea rows="6" placeholder="Your Message" class="form-control form-textarea"></textarea>
+            <textarea rows="6" name="yourMessage" placeholder="Your Message" required class="form-control form-textarea"></textarea>
           </div>
           <div class="form-group form-footer">
             <input type="submit" value="Send message" class="send-button">
@@ -270,12 +281,12 @@
     <footer class="site-footer">
       <div class="container">
         <div class="follow-us">Follow&nbsp;Us
-          <ul class="social-links-list">
-            <li class="list-item"><a href="#" class="list-link list-link-github"></a></li>
-            <li class="list-item"><a href="#" class="list-link list-link-twitter"></a></li>
-            <li class="list-item"><a href="#" class="list-link list-link-dribble"></a></li>
-            <li class="list-item"><a href="#" class="list-link list-link-facebook"></a></li>
-            <li class="list-item"><a href="#" class="list-link list-link-instagram"></a></li>
+          <ul class="social-links">
+            <li class="item"><a href="#" class="link"><i class="fa fa-github"></i></a></li>
+            <li class="item"><a href="#" class="link"><i class="fa fa-twitter"></i></a></li>
+            <li class="item"><a href="#" class="link"><i class="fa fa-dribbble"></i></a></li>
+            <li class="item"><a href="#" class="link"><i class="fa fa-facebook"></i></a></li>
+            <li class="item"><a href="#" class="link"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>
@@ -286,6 +297,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script>try { jQuery.fn.modal; } catch (e) { document.write('<script src="js/lib/bootstrap-3.3.5/bootstrap.min.js"><\/script>') }</script>
     <!--script(src='js/lib/bootstrap-3.3.5/bootstrap.min.js')-->
+    <script src="js/lib/jquery-form-validation-0.7.0-dev/formValidation.min.js"></script>
+    <script src="js/lib/jquery-form-validation-0.7.0-dev/frameworks/bootstrap.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

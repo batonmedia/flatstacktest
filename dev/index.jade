@@ -23,7 +23,7 @@ html(lang="en")
                             a.menu-link(href="#") Contact
             .container
                 .header-hello
-                    p.hidden-xs Hi&nbsp;there! We&nbsp;are the new kids on&nbsp;the block<br> and we&nbsp;build awesome websites and mobile apps.
+                    p Hi&nbsp;there! We&nbsp;are the new kids on&nbsp;the block<br> and we&nbsp;build awesome websites and mobile apps.
                     a.button(href="#") Work with&nbsp;us
         section.section-services
             .container
@@ -41,6 +41,7 @@ html(lang="en")
                             img.icon.icon-design(src="img/services_design.png" width="74" height="123" alt="Design")
                         .title Design
                         .info Sed ut&nbsp;perspiciatis unde omnis iste natus error sit voluptatem
+                    .clearfix.visible-sm-block
                     .col-xs-12.col-sm-6.col-md-3.service
                         .icon-wrapper
                             img.icon.icon-development(src="img/services_development.png" width="159" height="122" alt="Development")
@@ -64,13 +65,17 @@ html(lang="en")
                         .info Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut&nbsp;laoreet dolore magna.
                         ul.contacts
                             li.contact
-                                a.link.link-facebook(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-facebook
                             li.contact
-                                a.link.link-twitter(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-twitter
                             li.contact
-                                a.link.link-linkedin(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-linkedin
                             li.contact
-                                a.link.link-mail(href="mailto:#")
+                                a.link(href="mailto:#")
+                                    i.fa.fa-envelope
                     .col-xs-12.col-sm-6.col-md-3.team-member
                         img.photo(src="img/team_2.jpg" width="200" height="200")
                         .name Peter Davis
@@ -78,11 +83,15 @@ html(lang="en")
                         .info Duis aute irure dolor in&nbsp;in&nbsp;voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.
                         ul.contacts
                             li.contact
-                                a.link.link-twitter(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-twitter
                             li.contact
-                                a.link.link-linkedin(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-linkedin
                             li.contact
-                                a.link.link-mail(href="mailto:#")
+                                a.link(href="mailto:#")
+                                    i.fa.fa-envelope
+                    .clearfix.visible-sm-block
                     .col-xs-12.col-sm-6.col-md-3.team-member
                         img.photo(src="img/team_3.jpg" width="200" height="200")
                         .name Olivia Wilde
@@ -90,13 +99,17 @@ html(lang="en")
                         .info Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
                         ul.contacts
                             li.contact
-                                a.link.link-facebook(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-facebook
                             li.contact
-                                a.link.link-twitter(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-twitter
                             li.contact
-                                a.link.link-linkedin(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-linkedin
                             li.contact
-                                a.link.link-mail(href="mailto:#")
+                                a.link(href="mailto:#")
+                                    i.fa.fa-envelope
                     .col-xs-12.col-sm-6.col-md-3.team-member
                         img.photo(src="img/team_4.jpg" width="200" height="200")
                         .name Ashley Greene
@@ -104,11 +117,14 @@ html(lang="en")
                         .info Sed ut&nbsp;perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                         ul.contacts
                             li.contact
-                                a.link.link-facebook(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-facebook
                             li.contact
-                                a.link.link-twitter(href="#")
+                                a.link(href="#")
+                                    i.fa.fa-twitter
                             li.contact
-                                a.link.link-mail(href="mailto:#")
+                                a.link(href="mailto:#")
+                                    i.fa.fa-envelope
         section.section-skills
             .container
                 h2.section-heading We&nbsp;got skills!
@@ -116,24 +132,29 @@ html(lang="en")
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do&nbsp;eiusmod<br> tempor incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua.
                 .row.skills
                     .col-xs-12.col-sm-6.col-md-3.skill
-                        .percents
-                            img(src="img/skills_1.png" width="160" height="160" alt="Web Design Skill 90%")
-                            .value 90
+                        .percents(data-value='90' data-color="#3c989e")
+                            canvas.canvas(width='160', height='160')
+                                img(src="img/skills_1.png" width="160" height="160" alt="Web Design Skill 90%")
+                            .value
                         .name Web Design
                     .col-xs-12.col-sm-6.col-md-3.skill
-                        .percents
-                            img(src="img/skills_2.png" width="160" height="160" alt="Web Design Skill 75%")
-                            .value 75
+                        .percents(data-value='75' data-color="#ed5276")
+                            canvas.canvas(width='160', height='160')
+                                img(src="img/skills_2.png" width="160" height="160" alt="Web Design Skill 75%")
+                            .value
                         .name HTML / CSS
+                    .clearfix.visible-sm-block
                     .col-xs-12.col-sm-6.col-md-3.skill
-                        .percents
-                            img(src="img/skills_3.png" width="160" height="160" alt="Web Design Skill 70%")
-                            .value 70
+                        .percents(data-value='70' data-color="#5db5a4")
+                            canvas.canvas(width='160', height='160')
+                                img(src="img/skills_3.png" width="160" height="160" alt="Web Design Skill 70%")
+                            .value
                         .name Graphic Design
                     .col-xs-12.col-sm-6.col-md-3.skill
-                        .percents
-                            img(src="img/skills_4.png" width="160" height="160" alt="Web Design Skill 85%")
-                            .value 85
+                        .percents(data-value='85' data-color="#f57a82")
+                            canvas.canvas(width='160', height='160')
+                                img(src="img/skills_4.png" width="160" height="160" alt="Web Design Skill 85%")
+                            .value
                         .name UI / UX
         section.section-portfolio
             .container
@@ -178,7 +199,7 @@ html(lang="en")
                 .row.feedback-entries
                     .col-xs-12.col-sm-12.col-md-6.entry
                         .row
-                            .col-xs-6.col-sm-4.col-md-3
+                            .col-xs-6.col-sm-4.col-md-3.text-center
                                 img.img-responsive.photo(src="img/feedback_1.jpg" width="96" height="96" alt="Chanel Iman")
                             .col-xs-6.col-sm-8.col-md-9
                                 .text
@@ -187,16 +208,17 @@ html(lang="en")
                                 .position CEO of Pinterest
                     .col-xs-12.col-sm-12.col-md-6.entry
                         .row
-                            .col-xs-6.col-sm-4.col-md-3
+                            .col-xs-6.col-sm-4.col-md-3.text-center
                                 img.img-responsive.photo(src="img/feedback_2.jpg" width="96" height="96" alt="Brooklyn Jones")
                             .col-xs-6.col-sm-8.col-md-9
                                 .text
                                     p Vivamus luctus urna sed urna ultricies ac&nbsp;tempor dui sagittis. In&nbsp;condimentum facilisis porta.
                                 .name Brooklyn Jones
                                 .position Founder of Instagram
+                    .clearfix.visible-md-block
                     .col-xs-12.col-sm-12.col-md-6.entry
                         .row
-                            .col-xs-6.col-sm-4.col-md-3
+                            .col-xs-6.col-sm-4.col-md-3.text-center
                                 img.img-responsive.photo(src="img/feedback_3.jpg" width="96" height="96" alt="Donald Roberts")
                             .col-xs-6.col-sm-8.col-md-9
                                 .text
@@ -206,7 +228,7 @@ html(lang="en")
 
                     .col-xs-12.col-sm-12.col-md-6.entry
                         .row
-                            .col-xs-6.col-sm-4.col-md-3
+                            .col-xs-6.col-sm-4.col-md-3.text-center
                                 img.img-responsive.photo(src="img/feedback_4.jpg" width="96" height="96" alt="Joe Ward")
                             .col-xs-6.col-sm-8.col-md-9
                                 .text
@@ -218,34 +240,40 @@ html(lang="en")
                 h2.section-heading Get in touch
                 .section-body
                     p 1600 Pennsylvania Ave NW, Washington, DC&nbsp;20500, United States of&nbsp;America. Tel: (202) 456-1111
-                form.contact-form
-                    //.col-xs-offset-1.col-sm-offset-1.col-md-offset-1.col-xs-10.col-sm-10.col-md-10
-                    .row.form-group
+                form#contact-form.contact-form
+                    .row
                         .col-xs-12.col-sm-12.col-md-6
-                            label.sr-only(for="your-name") Your Name
-                            input#your-name.form-control(type="text", name="yourName" placeholder="Your Name")
+                            .form-group
+                                label.sr-only(for="your-name") Your Name
+                                input#your-name.form-control(type="text" name="yourName" placeholder="Your Name" required)
                         .col-xs-12.col-sm-12.col-md-6
-                            label.sr-only(for="your-email") Your E-mail
-                            input#your-email.form-control(type="text", name="yourEmail", placeholder="Your E-mail")
+                            .form-group
+                                label.sr-only(for="your-email") Your E-mail
+                                input#your-email.form-control(type="email" name="yourEmail" placeholder="Your E-mail" required)
                     .form-group
-                        textarea.form-control.form-textarea(rows="6", placeholder="Your Message")
+                        textarea.form-control.form-textarea(rows="6" name="yourMessage" placeholder="Your Message" required)
                     .form-group.form-footer
                         input.send-button(type="submit", value="Send message")
         footer.site-footer
             .container
                 .follow-us
                     |Follow&nbsp;Us
-                    ul.social-links-list
-                        li.list-item
-                            a.list-link.list-link-github(href="#")
-                        li.list-item
-                            a.list-link.list-link-twitter(href="#")
-                        li.list-item
-                            a.list-link.list-link-dribble(href="#")
-                        li.list-item
-                            a.list-link.list-link-facebook(href="#")
-                        li.list-item
-                            a.list-link.list-link-instagram(href="#")
+                    ul.social-links
+                        li.item
+                            a.link(href="#")
+                                i.fa.fa-github
+                        li.item
+                            a.link(href="#")
+                                i.fa.fa-twitter
+                        li.item
+                            a.link(href="#")
+                                i.fa.fa-dribbble
+                        li.item
+                            a.link(href="#")
+                                i.fa.fa-facebook
+                        li.item
+                            a.link(href="#")
+                                i.fa.fa-instagram
 
         //--- jQuery ---//
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
@@ -256,5 +284,9 @@ html(lang="en")
         script(src='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js')
         script try { jQuery.fn.modal; } catch (e) { document.write('<script src="js/lib/bootstrap-3.3.5/bootstrap.min.js"><\/script>') }
         //script(src='js/lib/bootstrap-3.3.5/bootstrap.min.js')
+
+        //--- Form Validation ---//
+        script(src='js/lib/jquery-form-validation-0.7.0-dev/formValidation.min.js')
+        script(src='js/lib/jquery-form-validation-0.7.0-dev/frameworks/bootstrap.min.js')
 
         script(src='js/script.min.js')

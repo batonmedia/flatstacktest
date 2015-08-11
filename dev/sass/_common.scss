@@ -85,3 +85,42 @@ body {
   line-height: 25px;
   resize: none;
 }
+
+.form-control {
+  &:focus {
+    box-shadow: none;
+  }
+  .has-error & {
+    border-color: #f57a82;
+    border-width: 2px;
+    box-shadow: none;
+
+    &:focus {
+      border-color: #c66365;
+      box-shadow: none;
+    }
+  }
+
+  .has-success & {
+    border-color: #74f580;
+    border-width: 2px;
+    box-shadow: none;
+
+    &:focus {
+      border-color: #57ae57;
+      box-shadow: none;
+    }
+  }
+}
+
+.has-error .help-block {
+  color: #ed5276;
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
